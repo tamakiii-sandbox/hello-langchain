@@ -14,7 +14,7 @@ install: \
 	/usr/local/lib/python3.11/site-packages
 
 uninstall:
-	rm -rf /usr/local/lib/python3.11/site-packages
+	# rm -rf /usr/local/lib/python3.11/site-packages
 
 teardown:
 	rm -rf .env
