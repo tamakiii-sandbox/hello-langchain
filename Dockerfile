@@ -11,3 +11,5 @@ RUN dnf update && \
 		dnf clean all
 
 RUN alternatives --install /usr/bin/python python /usr/bin/python3.9 1
+
+RUN python -m pip install poetry
