@@ -7,3 +7,7 @@ make setup
 make -f docker.mk build
 make -f docker.mk bash
 ```
+```sh
+make -B install
+python main.py
+```
