@@ -6,10 +6,11 @@ RUN dnf update && \
 			man \
 			make \
 			less \
-			python3-pip \
+			python3.11 \
+			python3.11-pip \
 			&& \
 		dnf clean all
 
-RUN alternatives --install /usr/bin/python python /usr/bin/python3.9 1
+RUN alternatives --install /usr/bin/python python /usr/bin/python3.11 1
 
 RUN python -m pip install poetry
