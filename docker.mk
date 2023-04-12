@@ -11,7 +11,12 @@ build: Dockerfile
 	docker build -t $(IMAGE):$(LABEL) .
 
 bash:
-	docker run -it --rm -v $(PWD):$(WORK_DIR) -w $(WORK_DIR) $(IMAGE):$(LABEL) $@
+	docker run -it --rm \
+		-v $(PWD):$(WORK_DIR) \
+		-w $(WORK_DIR) \
+		--env-file .env \
+		$(IMAGE):$(LABEL) \
+		$@
 
 clean:
 	docker image rm $(IMAGE):$(LABEL)
