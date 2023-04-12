@@ -6,6 +6,7 @@ RUN dnf update && \
 			man \
 			make \
 			less \
+			findutils \
 			python3.11 \
 			python3.11-pip \
 			&& \
@@ -14,3 +15,5 @@ RUN dnf update && \
 RUN alternatives --install /usr/bin/python python /usr/bin/python3.11 1
 
 RUN python -m pip install poetry
+
+WORKDIR /usr/local/lib/tamakiii-sandbox/hello-langchain
