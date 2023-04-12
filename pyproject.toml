@@ -4,7 +4,7 @@ version = "0.0.1"
 description = ""
 authors = ["tamakiii"]
 readme = "README.md"
-packages = [{include = "tamakiii_sandbox"}]
+# packages = [{include = "hello_langchain"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
