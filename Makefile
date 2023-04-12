@@ -11,10 +11,10 @@ setup: \
 	.env
 
 install: \
-	.venv
+	/usr/local/lib/python3.11/site-packages
 
 uninstall:
-	rm -rf .venv
+	rm -rf /usr/local/lib/python3.11/site-packages
 
 teardown:
 	rm -rf .env
@@ -23,5 +23,5 @@ teardown:
 	#echo OPENAI_API_KEY=... > $@
 	@echo OPENAI_API_KEY=$(OPENAI_API_KEY) > $@
 
-.venv:
+/usr/local/lib/python3.11/site-packages:
 	python -m poetry install --no-root
