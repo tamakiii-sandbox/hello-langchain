@@ -24,4 +24,4 @@ teardown:
 	@echo OPENAI_API_KEY=$(OPENAI_API_KEY) > $@
 
 /usr/local/lib/python3.11/site-packages:
-	python -m poetry install --no-root
+	python -m poetry install
