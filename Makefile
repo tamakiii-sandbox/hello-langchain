@@ -1,4 +1,5 @@
 .PHONY: help setup install teardown uninstall
+.PHONY: build clean
 
 export OPENAI_API_KEY ?=
 export POETRY_VIRTUALENVS_CREATE ?= false
@@ -13,6 +14,12 @@ setup: \
 install: \
 	/usr/local/lib/python3.11/site-packages
 
+build: \
+	dist
+
+clean:
+	rm -rf dist
+
 uninstall:
 	# rm -rf /usr/local/lib/python3.11/site-packages
 
@@ -25,3 +32,6 @@ teardown:
 
 /usr/local/lib/python3.11/site-packages:
 	python -m poetry install
+
+dist:
+	python3 -m poetry build
