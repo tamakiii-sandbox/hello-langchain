@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "tamakiii-sandbox/hello-langchain"
+name = "hello-langchain"
 version = "0.0.1"
 description = ""
 authors = ["tamakiii"]
 readme = "README.md"
-# packages = [{include = "hello_langchain"}]
+packages = [{include = "hello_langchain"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
