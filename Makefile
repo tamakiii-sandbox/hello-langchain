@@ -3,7 +3,7 @@
 
 export OPENAI_API_KEY ?=
 export POETRY_VIRTUALENVS_CREATE ?= false
-# export POETRY_VIRTUALENVS_IN_PROJECT ?= true
+# export POETRY_VIRTUALENVS_IN_PROJECT ?= false
 
 help:
 	@cat $(firstword $(MAKEFILE_LIST))
