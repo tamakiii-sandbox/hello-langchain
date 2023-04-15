@@ -1,4 +1,7 @@
 # hello-langchain
+- https://python.langchain.com/en/latest/index.html
+- https://python.langchain.com/en/latest/use_cases/code/twitter-the-algorithm-analysis-deeplake.html
+- https://docs.activeloop.ai/
 
 ## How to use
 ```sh
