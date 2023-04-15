@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "hello-langchain"
+version = "0.0.1"
+description = ""
+authors = ["tamakiii"]
+readme = "README.md"
+packages = [{include = "hello_langchain"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langchain = "^0.0.137"
+openai = "^0.27.4"
+deeplake = "^3.2.22"
+tiktoken = "^0.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
