@@ -17,3 +17,6 @@ RUN alternatives --install /usr/bin/python python /usr/bin/python3.11 1
 RUN python -m pip install poetry
 
 WORKDIR /usr/local/lib/tamakiii-sandbox/hello-langchain
+
+COPY . /usr/local/lib/tamakiii-sandbox/hello-langchain
+RUN make -B install
