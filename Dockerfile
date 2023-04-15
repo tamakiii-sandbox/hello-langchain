@@ -6,6 +6,7 @@ RUN dnf update && \
       man \
       make \
       less \
+      git \
       findutils \
       python3.11 \
       python3.11-pip \
