@@ -3,6 +3,8 @@
 
 export OPENAI_API_KEY ?=
 export DEEPLAKE_API_KEY ?=
+export DEEPLAKE_PATH ?=
+
 export POETRY_VIRTUALENVS_CREATE ?= false
 export POETRY_VIRTUALENVS_IN_PROJECT ?= false
 
@@ -32,6 +34,8 @@ teardown:
 	@echo OPENAI_API_KEY=$(OPENAI_API_KEY) > $@
 	#echo DEEPLAKE_API_KEY=... > $@
 	@echo DEEPLAKE_API_KEY=$(DEEPLAKE_API_KEY) > $@
+	#echo DEEPLAKE_PATH=... > $@
+	@echo DEEPLAKE_PATH=$(DEEPLAKE_PATH) > $@
 
 /usr/local/lib/python3.11/site-packages:
 	python -m poetry install
